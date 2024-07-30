@@ -1,8 +1,15 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+// import Spinner from "./components/Spinner";
 
 function App() {
-
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      {/* <Spinner /> */}
+      <Navbar/>
+      
+    </>
+  );
 }
 
 export default App;
