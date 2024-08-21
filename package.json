@@ -18,14 +18,18 @@
     "@mui/icons-material": "^5.16.5",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "framer-motion": "^11.3.29",
     "popper.js": "^1.16.1",
     "process": "^0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0",
     "react-spinners": "^0.14.1",
+    "react-use-measure": "^2.1.1",
     "reactstrap": "^9.2.2",
-    "styled-components": "^6.1.12"
+    "styled-components": "^6.1.12",
+    "swiper": "^11.1.10"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

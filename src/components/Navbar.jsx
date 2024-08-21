@@ -6,7 +6,7 @@ const Navbar = () => {
     height: "80px",
   };
   return (
-    <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+    <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar ">
       <div className="container">
         <a href="#" className="navbar-brand">
           <img
