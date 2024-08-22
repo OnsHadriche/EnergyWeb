@@ -51,9 +51,10 @@ const Home = () => {
         <div className="container">
           <div className="section-header text-center">
             <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">
-              Pricing
+              Choose your right plan!
             </h2>
             <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            <p>Select from best plans, ensuring a perfect match</p>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 col-xs-12">

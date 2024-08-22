@@ -506,7 +506,11 @@ hr {
 .about-area .content p {
   margin-bottom: 30px;
 }
-
+.about-area .text-bg-badge {
+  color: #3384f9;
+  background-color: white;
+  font-size: 15px;
+}
 #cta {
   padding: 30px 0;
 }
