@@ -8,6 +8,7 @@ import {
   faNetworkWired,
   faScaleUnbalancedFlip,
 } from "@fortawesome/free-solid-svg-icons";
+import ProductSection from "../Layouts/ProductSection";
 const Home = () => {
   const tabService = [
     {
@@ -38,7 +39,8 @@ const Home = () => {
             <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">
               Our Services
             </h2>
-            <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            <div className="shape wow
+             fadeInDown" data-wow-delay="0.3s"></div>
           </div>
           <div className="row" id="services">
             {tabService.map((item, index) => (
@@ -56,6 +58,7 @@ const Home = () => {
       </section>
       <AboutSection />
       <Features />
+      <ProductSection/>
 
       <AccordionPricing />
     </>
