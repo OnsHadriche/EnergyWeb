@@ -1461,7 +1461,7 @@ Card product
   text-align: initial;
 }
 .btn-primary {
-  border-radius: 50px;
+  border-radius: 10px;
   width: 120px;
 }
 .btn-secondary {

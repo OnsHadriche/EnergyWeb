@@ -9,7 +9,7 @@ const CardProduct = ({ item }) => {
         <img src="/src/assets/images/produit.jpg" className="card-img-top  " />
       </div>
       <div className="card-body">
-        <div  className="d-flex justify-content-evently align-items-center mb-3">
+        <div  className="d-flex justify-content-between align-items-center mb-3">
           <h5 className="card-title">{item.title}</h5>
           <FontAwesomeIcon icon={faCartShopping} />
         </div>
