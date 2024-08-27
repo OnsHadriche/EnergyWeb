@@ -3,8 +3,8 @@ import "./../assets/css/main.css";
 
 export const AboutSection = () => {
   return (
-    <div className="about-area section-padding bg-gray">
-      <div className="container">
+    <div className="about-area section-padding ">
+      <div className="container ">
         <div className="row">
           <div className="col-lg-5 col-md-12 col-xs-12 info">
             <div className="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">

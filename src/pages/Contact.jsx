@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section id="contact" className="section-padding bg-gray">
+    <section id="contact" className="section-padding bg-gray " style={{marginTop:"8rem"}}>
       <div className="container">
         <div className="section-header text-center">
           <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">

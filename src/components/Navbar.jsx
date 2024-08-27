@@ -1,5 +1,9 @@
 // import DensitySmallOutlinedIcon from "@mui/icons-material/DensitySmallOutlined";
 
+import { Link } from "react-router-dom";
+7;
+import { HashLink } from "react-router-hash-link";
+
 const Navbar = () => {
   const styleImageLogo = {
     width: "200px",
@@ -8,13 +12,13 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar ">
       <div className="container">
-        <a href="#" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img
             src="/src/assets/images/logo.png"
             style={styleImageLogo}
             alt=""
           />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,39 +33,52 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto w-100 justify-content-end clearfix">
             <li className="nav-item active">
-              <a className="nav-link" href="#hero-area">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services">
+              <HashLink
+                className="nav-link"
+                to="/page#services"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smmoth", block: "end" })
+                }
+              >
                 Services
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#team">
-                Team
-              </a>
+              <Link className="nav-link" href="/marketplace">
+                Marketplace
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#pricing">
+              <HashLink className="nav-link" to="/page#product" smooth>
+                Product
+              </HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink
+                className="nav-link"
+                to="/page#pricing"
+                
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "end" })
+                }
+              >
                 Pricing
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#testimonial">
-                Testimonial
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="btn btn-common ms-3">
+              <Link to="/login" className="btn btn-common ms-3">
                 login
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

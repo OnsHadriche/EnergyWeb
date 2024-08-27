@@ -1,41 +1,138 @@
+import { CardPricing } from "./CardPricing";
 
 const AccordionPricing = () => {
   return (
-    <div>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-</div>
-    </div>
-  )
-}
+    <section id="pricing" className="section-padding bg-pricing">
+      <div className="container">
+        <div className="section-header text-center">
+          <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">
+            Choose your right plan!
+          </h2>
+          <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+          <p className="wow fadeInDown" data-wow-delay="0.3s">
+            Select from best plans, ensuring a perfect match
+          </p>
+        </div>
+        <div
+          className="accordion accordion-flush wow fadeInDown shadow-sm p-3 mb-5 bg-body-tertiary rounded  "
+          data-wow-delay="0.3s"
+          id="accordionFlushExample"
+        >
+          <div className="accordion-item  ">
+            <h2 className="accordion-header ">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Company
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                <div className="row">
+                  <CardPricing />
+                  <CardPricing />
+                  <CardPricing />
+                </div>
+              </div>
+            </div>
+          </div>
 
-export default AccordionPricing
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Provider
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                <div className="row">
+                  <CardPricing />
+                  <CardPricing />
+                  <CardPricing />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Individual
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                <div className="row">
+                  <CardPricing />
+                  <CardPricing />
+                  <CardPricing />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Client
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                <div className="row">
+                  <CardPricing />
+                  <CardPricing />
+                  <CardPricing />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AccordionPricing;

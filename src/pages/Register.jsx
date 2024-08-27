@@ -15,8 +15,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
     padding: '0 10px',
   };
   return (
-    <div className=" container d-flex justify-content-center">
-      <div className="row p-3  shadow box-area rounded border  bg-primary  ">
+    <div className=" container d-flex justify-content-center" style={{marginTop:"7rem"}}>
+      <div className="row p-3  shadow box-area rounded border   ">
         <div className="col-lg-6 col-md-5 col-s-3 col-sx-12 mt-5 d-flex justify-content-center align-items-center ">
           <div className="featured-image">
             <img
@@ -26,10 +26,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
             />
           </div>
         </div>
-        <div className="col-lg-6 col-md-7 col-s-9 col-sx-12 bg-white shadow">
+        <div className="col-lg-6 col-md-7 col-s-9 col-sx-12 ">
           <div className="container d-flex align-items-center flex-column">
             <div className="header-text text-center  mb-4">
-              <h2>Sign up</h2>
+              <h2 className="mt-5">Sign up</h2>
             </div>
             <div className="row ">
               <div className="col wow fadeInLeft" data-wow-delay="0.3s">
@@ -97,8 +97,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
                       Submit
                     </button>
                   </div>
-                  <div className="col-12 text-center mt-5 " style={borderStyle}>
-                    <span style={contentStyle}>or </span>
+                  <div className="col-12 text-center  " >
+                    <span >or </span>
                   </div>
                 </form>
               </div>

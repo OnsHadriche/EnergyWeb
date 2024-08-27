@@ -4,9 +4,10 @@ import {
   faFacebook,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <div className=" container d-flex justify-content-center ">
+    <div className=" container d-flex justify-content-center "  style={{marginTop:"8rem"}} >
       <div className="row p-3 bg-white shadow box-area rounded border ">
         <div className="col-lg-6 col-md-5 col-s-3 col-sx-12 mt-5 d-flex justify-content-center align-items-center ">
           <div className="featured-image">
@@ -80,7 +81,7 @@ const Login = () => {
                 </ul>
               </div>
               <div className="col-12 text-center ">
-                    <span>Don't have an account yet ? <a href="#">Sign up here</a></span>
+                    <span>Don't have an account yet ? <Link to="/register">Sign up here</Link></span>
                   </div>
             </div>
           </div>

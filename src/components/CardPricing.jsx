@@ -1,7 +1,7 @@
 export const CardPricing = () => {
   return (
     <div className="col-lg-4 col-md-6 col-xs-12">
-      <div className="table wow fadeInLeft" data-wow-delay="1.2s">
+      <div className="table " data-wow-delay="1.2s">
         <div className="icon-box">
           <i className="lni-package"></i>
         </div>
